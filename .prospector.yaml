@@ -1,0 +1,26 @@
+strictness: veryhigh
+test-warnings: true
+doc-warnings: true
+
+max-line-length: 88
+
+pep8:
+  disable:
+    - D205 # 1 blank line required between summary line and description
+
+pep257:
+  disable:
+    - D212 # Multi-line docstring summary should start at the first line
+    - D205
+    - D400 # First line should end with a period (not 'y')
+    - D415 # First line should end with a period, question mark, or exclamation point
+    - D401 # First line should be in imperative mood; try rephrasing
+    - D203
+
+mypy:
+  # Config controlled in mypy.ini
+  run: true
+
+pylint:
+  # Config controlled in .pylintrc
+  run: true
